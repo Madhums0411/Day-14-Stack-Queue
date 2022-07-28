@@ -19,7 +19,7 @@ namespace DataStructureProblem
         public void Push(int value)
         {
             //Adding new node in stack 
-            linkedList.AddNode(value);
+            linkedList.AppendNode(value);
         }
 
         public void DisplayStack()
@@ -33,7 +33,10 @@ namespace DataStructureProblem
             //Return top value of stack
             return linkedList.Head;
         }
-
-
+        public void pop()
+        {
+            //Delete Node from stack
+            linkedList.DeleteNodeAtFirst();
+        }
     }
 }

@@ -17,4 +17,4 @@ namespace DataStructureProblem
             next = null;
         }
     }
-}
+}  

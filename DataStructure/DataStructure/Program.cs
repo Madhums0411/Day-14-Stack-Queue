@@ -8,3 +8,5 @@ stack.Push(30);
 stack.Push(56);
 stack.DisplayStack();
 stack.Top();
+stack.pop();
+stack.DisplayStack();
