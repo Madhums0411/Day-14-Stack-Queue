@@ -13,3 +13,6 @@ queue.Enqueue(30);
 queue.Enqueue(70);
 queue.DisplayQueue();
 queue.Top();
+
+queue.Dequeue();
+queue.DisplayQueue();
