@@ -6,37 +6,34 @@ using System.Threading.Tasks;
 
 namespace DataStructureProblem
 {
-    public class Stack
+    public class Queue
     {
+        //Use linkedlist to perform operations
         LinkedLists linkedList;
 
-        public Stack()
+        public Queue()
         {
-
             linkedList = new LinkedLists();
         }
 
-        public void Push(int value)
+        public void Enqueue(int value)
         {
-            //Adding new node in stack 
+            //Adding node in  queue
             linkedList.AppendNode(value);
         }
 
-        public void DisplayStack()
+        public void DisplayQueue()
         {
-            Console.WriteLine("Stack:");
+            //Display the nodes in queue
+            Console.WriteLine("Queue:");
             linkedList.Display();
         }
 
         public Node Top()
         {
-            //Return top value of stack
+            //Display the topmost node in queue
             return linkedList.Head;
         }
-        public void pop()
-        {
-            //Delete Node from stack
-            linkedList.DeleteNodeAtFirst();
-        }
+
     }
 }
